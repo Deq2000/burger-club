@@ -36,15 +36,20 @@
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="location.html">Location</a></li>
-            <li><a href="../images/menu.png">Menu</a></li>         
+            <li><a href="../images/menu.png">Menu</a></li>
+            <li><a href="https://ordering.chownow.com/order/7631/locations?add_cn_ordering_class=true">ORDER ONLINE</a></li>
+            <li><a href="media.html"></a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
     <div class="col-sm-3" id="location-list">
-      <p>Address: 32-02 30th Ave, Astoria, NY 11102 </p>
+      <p>Address: 32-02 30th Ave, Astoria, NY 11102</p>
       <p>Hours:11:30AM–11:30PM</p>
       <p>Phone: (718) 777-7788</p>
+      <hr>
+      <p>We are expanding soon! This will be the location of the new Burger Club:</p>
+      <p>85 Broad St. New York, New York</p>
       <hr>
     </div>
     
@@ -58,15 +63,24 @@
       var map;
       function initMap() {
         var uluru = {lat: 40.7661763, lng: -73.9206756};
+        var uluru2 = {lat: 40.7039915, lng: -74.0132804};
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
+          zoom: 12,
           center: uluru
         });
         var marker = new google.maps.Marker({
           position: uluru,
           map: map
         });
+         var marker2 = new google.maps.Marker({
+          position: uluru2,
+          map: map
+        });
       }
+      
+      
+     
+
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJWN3KKLlUl6-LcBZVVfGKMamX_KwjbKA&callback=initMap"
     async defer></script>
